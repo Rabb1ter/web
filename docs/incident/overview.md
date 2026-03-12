@@ -15,6 +15,11 @@
 - 业务系统负责人
 - 合规与法务支持人员
 
+## 权威标准（Demo）
+- **NIST SP 800-61 Rev.2** — 计算机安全事件处置指南。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final
+- **CISA Incident Response Playbook** — 政府级应急响应手册。来源：CISA · https://www.cisa.gov/resources-tools/resources/incident-response-playbook
+- **NCSC Incident Management** — 事件管理与协调最佳实践。来源：NCSC-UK · https://www.ncsc.gov.uk/collection/incident-management
+
 ## 安全事件分级标准
 - 影响范围与业务等级
 - 触发升级条件

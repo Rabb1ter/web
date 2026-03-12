@@ -15,6 +15,11 @@
 - 合规与内审团队
 - 业务负责人
 
+## 权威标准（Demo）
+- **NIST CSF Profile Template** — 框架画像与对齐模板。来源：NIST · https://www.nist.gov/cyberframework
+- **CIS Controls Implementation Groups** — 控制落地分级与模板。来源：CIS · https://www.cisecurity.org/controls
+- **CISA Cybersecurity Performance Goals** — 关键安全目标与基线。来源：CISA · https://www.cisa.gov/cpg
+
 ## CISO 周报模板
 - 本周关键事件
 - 风险变化与处置进展

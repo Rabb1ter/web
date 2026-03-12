@@ -15,6 +15,11 @@
 - 安全运营工程师
 - 安全分析师
 
+## 权威标准（Demo）
+- **NIST SP 800-137** — 信息安全持续监测（ISCM）指南。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-137/final
+- **NIST SP 800-92** — 安全日志管理指南。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-92/final
+- **MITRE ATT&CK** — 对抗技术与战术知识库。来源：MITRE · https://attack.mitre.org/
+
 ## 7×24 安全运营流程
 - 值班机制与排班规则
 - 监控与告警分级

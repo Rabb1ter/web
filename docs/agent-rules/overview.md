@@ -15,6 +15,11 @@
 - AI / 研发工程师
 - 安全运营负责人
 
+## 权威标准（Demo）
+- **NIST SP 800-30** — 风险评估指南。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final
+- **NIST SP 800-53 Rev.5** — 安全与隐私控制基线。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final
+- **NIST AI RMF 1.0** — AI 风险管理框架。来源：NIST · https://www.nist.gov/itl/ai-risk-management-framework
+
 ## 安全态势评分规则
 - 资产风险评分与权重
 - 事件影响与趋势

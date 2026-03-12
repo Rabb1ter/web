@@ -15,6 +15,11 @@
 - 安全治理 / 合规负责人
 - 风险管理相关岗位
 
+## 权威标准（Demo）
+- **NIST Cybersecurity Framework 2.0 (CSF 2.0)** — 治理与能力建设通用框架。来源：NIST · https://www.nist.gov/cyberframework
+- **ISO/IEC 27001:2022** — 信息安全管理体系（ISMS）要求基线。来源：ISO · https://www.iso.org/standard/82875.html
+- **CIS Controls v8** — 18 项关键安全控制与优先级。来源：CIS · https://www.cisecurity.org/controls
+
 ## CISO 工作框架与职责
 - 安全战略与业务目标对齐
 - 风险治理与关键决策

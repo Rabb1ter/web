@@ -15,6 +15,11 @@
 - 安全治理负责人
 - 数据安全负责人
 
+## 权威标准（Demo）
+- **等保 2.0（GB/T 22239-2019）** — 网络安全等级保护基本要求。来源：国家标准 · https://std.samr.gov.cn/
+- **ISO/IEC 27002:2022** — 安全控制实践指南。来源：ISO · https://www.iso.org/standard/75652.html
+- **PCI DSS v4.0** — 支付卡行业数据安全标准。来源：PCI SSC · https://www.pcisecuritystandards.org/
+
 ## 等保 2.0 三级检查项
 - 安全管理制度与组织
 - 技术控制与日志审计

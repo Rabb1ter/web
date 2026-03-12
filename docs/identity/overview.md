@@ -15,6 +15,11 @@
 - IT 运维与系统管理员
 - 合规与内审人员
 
+## 权威标准（Demo）
+- **NIST SP 800-63-3** — 数字身份指南（身份验证与身份保障）。来源：NIST · https://pages.nist.gov/800-63-3/
+- **NIST SP 800-207** — 零信任架构指南。来源：NIST · https://csrc.nist.gov/publications/detail/sp/800-207/final
+- **CIS Controls v8 - Control 5** — 账号管理与权限控制。来源：CIS · https://www.cisecurity.org/controls
+
 ## 账号生命周期管理
 - 入职创建与授权
 - 调岗与权限变更
