@@ -26,19 +26,15 @@ features:
 ## 功能入口
 <div class="module-grid">
   <a class="module-card" href="/governance/overview">
-    <strong>入口 01</strong>
     开始浏览
   </a>
   <a class="module-card" href="/search/index">
-    <strong>入口 02</strong>
     快速搜索
   </a>
   <a class="module-card" href="/changelog">
-    <strong>入口 03</strong>
     最新更新
   </a>
   <a class="module-card" href="/templates/overview">
-    <strong>入口 04</strong>
     常用模板
   </a>
 </div>
@@ -52,39 +48,30 @@ features:
 ## 核心模块
 <div class="module-grid">
   <a class="module-card" href="/governance/overview">
-    <strong>Module 01</strong>
     安全治理体系
   </a>
   <a class="module-card" href="/operations/overview">
-    <strong>Module 02</strong>
     安全运营体系
   </a>
   <a class="module-card" href="/vulnerability/overview">
-    <strong>Module 03</strong>
     漏洞管理体系
   </a>
   <a class="module-card" href="/identity/overview">
-    <strong>Module 04</strong>
     账号权限体系
   </a>
   <a class="module-card" href="/compliance/overview">
-    <strong>Module 05</strong>
     合规与等保体系
   </a>
   <a class="module-card" href="/incident/overview">
-    <strong>Module 06</strong>
     应急响应体系
   </a>
   <a class="module-card" href="/templates/overview">
-    <strong>Module 07</strong>
     安全汇报模板库
   </a>
   <a class="module-card" href="/agent-rules/overview">
-    <strong>Module 08</strong>
     CISO 智能体决策规则库
   </a>
   <a class="module-card" href="/search/index">
-    <strong>Module 09</strong>
     搜索中心（RAG 检索）
   </a>
 </div>
