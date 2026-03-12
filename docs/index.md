@@ -26,16 +26,24 @@ features:
 ## 功能入口
 <div class="module-grid">
   <a class="module-card" href="/governance/overview">
-    开始浏览
+    <span class="module-icon">📚</span>
+    <div class="module-title">开始浏览</div>
+    <div class="module-desc">进入知识体系目录与模块索引</div>
   </a>
   <a class="module-card" href="/search/index">
-    快速搜索
+    <span class="module-icon">🔎</span>
+    <div class="module-title">快速搜索</div>
+    <div class="module-desc">按关键词直达最佳实践</div>
   </a>
   <a class="module-card" href="/changelog">
-    最新更新
+    <span class="module-icon">🆕</span>
+    <div class="module-title">最新更新</div>
+    <div class="module-desc">查看自动更新日志</div>
   </a>
   <a class="module-card" href="/templates/overview">
-    常用模板
+    <span class="module-icon">🧾</span>
+    <div class="module-title">常用模板</div>
+    <div class="module-desc">快速复用汇报与 SOP</div>
   </a>
 </div>
 
@@ -48,31 +56,49 @@ features:
 ## 核心模块
 <div class="module-grid">
   <a class="module-card" href="/governance/overview">
-    安全治理体系
+    <span class="module-icon">🧭</span>
+    <div class="module-title">安全治理体系</div>
+    <div class="module-desc">战略、组织、制度与指标</div>
   </a>
   <a class="module-card" href="/operations/overview">
-    安全运营体系
+    <span class="module-icon">🛰️</span>
+    <div class="module-title">安全运营体系</div>
+    <div class="module-desc">SOC 运行与告警研判</div>
   </a>
   <a class="module-card" href="/vulnerability/overview">
-    漏洞管理体系
+    <span class="module-icon">🛡️</span>
+    <div class="module-title">漏洞管理体系</div>
+    <div class="module-desc">扫描、定级与整改闭环</div>
   </a>
   <a class="module-card" href="/identity/overview">
-    账号权限体系
+    <span class="module-icon">🔐</span>
+    <div class="module-title">账号权限体系</div>
+    <div class="module-desc">最小权限与特权治理</div>
   </a>
   <a class="module-card" href="/compliance/overview">
-    合规与等保体系
+    <span class="module-icon">✅</span>
+    <div class="module-title">合规与等保体系</div>
+    <div class="module-desc">等保 2.0 与零信任</div>
   </a>
   <a class="module-card" href="/incident/overview">
-    应急响应体系
+    <span class="module-icon">🚨</span>
+    <div class="module-title">应急响应体系</div>
+    <div class="module-desc">事件分级、处置与复盘</div>
   </a>
   <a class="module-card" href="/templates/overview">
-    安全汇报模板库
+    <span class="module-icon">📊</span>
+    <div class="module-title">安全汇报模板库</div>
+    <div class="module-desc">周报 / 月报 / 风险报告</div>
   </a>
   <a class="module-card" href="/agent-rules/overview">
-    CISO 智能体决策规则库
+    <span class="module-icon">🤖</span>
+    <div class="module-title">CISO 智能体决策规则库</div>
+    <div class="module-desc">决策规则与 RAG 提示词</div>
   </a>
   <a class="module-card" href="/search/index">
-    搜索中心（RAG 检索）
+    <span class="module-icon">🔍</span>
+    <div class="module-title">搜索中心（RAG 检索）</div>
+    <div class="module-desc">标题 + 内容 + 语义检索</div>
   </a>
 </div>
 
@@ -83,15 +109,18 @@ features:
 ## 了解更多
 <div class="module-grid">
   <a class="module-card" href="/about">
-    <strong>关于本站</strong>
-    网站定位与技术栈
+    <span class="module-icon">ℹ️</span>
+    <div class="module-title">关于本站</div>
+    <div class="module-desc">网站定位与技术栈</div>
   </a>
   <a class="module-card" href="/sources">
-    <strong>知识来源</strong>
-    NIST / SANS / CIS / 等保
+    <span class="module-icon">🗂️</span>
+    <div class="module-title">知识来源</div>
+    <div class="module-desc">NIST / SANS / CIS / 等保</div>
   </a>
   <a class="module-card" href="/changelog">
-    <strong>更新日志</strong>
-    自动更新记录
+    <span class="module-icon">🧾</span>
+    <div class="module-title">更新日志</div>
+    <div class="module-desc">自动更新记录</div>
   </a>
 </div>
