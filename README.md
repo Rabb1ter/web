@@ -1,36 +1,31 @@
-# CISO Knowledge
+# CISO · 安全最佳实践知识库
 
-A futuristic CISO knowledge hub built with Django + MySQL.
+基于 **VitePress** 的 CISO 知识库站点，面向信息安全负责人提供行业标准、决策依据、SOP、模板与规则库。
 
-## Features
-- Tech-style landing page
-- Knowledge base listing with search + category filters
-- Detail pages with tags and related insights
-- Demo dataset loader
-
-## Local Dev
+## 本地开发
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-export $(cat .env | xargs)
-python manage.py migrate
-python manage.py seed_demo
-python manage.py runserver 8000
+npm install
+npm run docs:dev
 ```
 
-## Production (example)
+## 构建
 ```bash
-python -m venv /opt/ciso-venv
-source /opt/ciso-venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py seed_demo
-python manage.py collectstatic
+npm run docs:build
+```
+构建产物位于 `docs/.vitepress/dist`。
+
+## 预览
+```bash
+npm run docs:preview
 ```
 
-Start with gunicorn:
-```bash
-gunicorn ciso_knowledge.wsgi:application --bind 0.0.0.0:8000
+## 目录结构
 ```
+docs/
+  .vitepress/
+  index.md
+  modules/
+  rules/
+```
+
+> 说明：此前的 Django 版本保留在仓库中，仅作为历史参考。
