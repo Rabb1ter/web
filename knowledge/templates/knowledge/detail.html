@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ item.title }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="section section--tight">
+    <div class="breadcrumb">
+        <a href="{% url 'knowledge:catalog' %}">Knowledge Base</a>
+        <span>→</span>
+        <span>{{ category_label }}</span>
+    </div>
+
+    <div class="detail">
+        <div class="detail__meta">
+            <span class="badge">{{ category_label }}</span>
+            <span>{{ item.published_at|date:"M d, Y" }}</span>
+        </div>
+        <h1>{{ item.title }}</h1>
+        <p class="lead">{{ item.summary }}</p>
+        <div class="content">
+            {{ item.content|linebreaks }}
+        </div>
+        <div class="tag-row">
+            {% for tag in item.tags_list %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% if item.source_url %}
+        <div class="source">
+            Source: <a href="{{ item.source_url }}" target="_blank" rel="noopener">{{ item.source_url }}</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section">
+    <div class="section__header">
+        <h2>Related Briefings</h2>
+        <p>More intelligence in the same domain.</p>
+    </div>
+    <div class="grid grid--cards">
+        {% for related in related_items %}
+        <article class="card">
+            <h3>{{ related.title }}</h3>
+            <p>{{ related.summary }}</p>
+            <a class="text-link" href="{% url 'knowledge:detail' slug=related.slug %}">Read →</a>
+        </article>
+        {% empty %}
+        <p>No related items yet.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

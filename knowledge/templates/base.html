@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ site_name }}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'knowledge/styles.css' %}">
+</head>
+<body>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="grid-overlay"></div>
+
+    <header class="nav">
+        <div class="nav__brand">
+            <span class="nav__logo">◉</span>
+            <span class="nav__title">{{ site_name }}</span>
+        </div>
+        <nav class="nav__links">
+            <a href="{% url 'knowledge:index' %}">Home</a>
+            <a href="{% url 'knowledge:catalog' %}">Knowledge Base</a>
+        </nav>
+        <a class="button button--ghost" href="{% url 'knowledge:catalog' %}">Explore</a>
+    </header>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>{{ site_name }}</strong> · Curated intelligence for modern security leaders.
+        </div>
+        <div class="footer__meta">
+            Built with Django · Demo dataset
+        </div>
+    </footer>
+</body>
+</html>

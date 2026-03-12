@@ -1,0 +1,262 @@
+[
+  {
+    "title": "Quarterly Threat Landscape Pulse",
+    "slug": "quarterly-threat-landscape-pulse",
+    "category": "threat-intel",
+    "summary": "A digest of emerging attacker techniques, top ransomware families, and regional hotspots for the quarter.",
+    "content": "This briefing synthesizes recent adversary campaigns, highlighting shifts toward multi-stage extortion and cross-cloud lateral movement.\n\nKey takeaways include an uptick in identity compromise, a renewed interest in edge devices, and increased targeting of security tooling for defense evasion.",
+    "tags": "ransomware,identity,telemetry",
+    "source_url": "",
+    "published_at": "2026-03-01T10:00:00"
+  },
+  {
+    "title": "Security Governance Maturity Model",
+    "slug": "security-governance-maturity-model",
+    "category": "governance",
+    "summary": "A staged model for aligning security strategy with business objectives and board oversight.",
+    "content": "This model outlines five maturity levels for governance, from reactive compliance to proactive risk orchestration.\n\nEach stage includes decision rights, reporting cadence, and metrics that translate technical risk into executive language.",
+    "tags": "governance,board,metrics",
+    "source_url": "",
+    "published_at": "2026-03-02T11:30:00"
+  },
+  {
+    "title": "Zero Trust Segmentation Blueprint",
+    "slug": "zero-trust-segmentation-blueprint",
+    "category": "zero-trust",
+    "summary": "Practical steps to segment high-value assets and reduce blast radius in hybrid environments.",
+    "content": "The blueprint maps critical assets to identity-aware policies, using workload trust tiers and continuous verification.\n\nThe reference architecture includes micro-segmentation, just-in-time access, and telemetry-driven enforcement loops.",
+    "tags": "zero trust,segmentation,identity",
+    "source_url": "",
+    "published_at": "2026-03-03T08:45:00"
+  },
+  {
+    "title": "Cloud Control Plane Risk Register",
+    "slug": "cloud-control-plane-risk-register",
+    "category": "cloud-security",
+    "summary": "Prioritized risks in cloud control planes and mitigation patterns for multi-cloud estates.",
+    "content": "Control plane compromises remain a top-tier concern due to privileged role abuse and misconfigured service principals.\n\nMitigations include strict MFA, just-in-time privileges, and continuous posture monitoring.",
+    "tags": "cloud,iam,posture",
+    "source_url": "",
+    "published_at": "2026-03-04T14:20:00"
+  },
+  {
+    "title": "Compliance Readiness: ISO 27001 Quickstart",
+    "slug": "compliance-readiness-iso-27001-quickstart",
+    "category": "compliance",
+    "summary": "A quickstart checklist mapping ISO 27001 controls to practical implementation steps.",
+    "content": "The checklist breaks down Annex A controls into tangible actions, evidence requirements, and responsible owners.\n\nIt includes sample audit questions and a rolling 90-day implementation plan.",
+    "tags": "iso27001,compliance,controls",
+    "source_url": "",
+    "published_at": "2026-03-05T09:10:00"
+  },
+  {
+    "title": "Incident Response War Room Playbook",
+    "slug": "incident-response-war-room-playbook",
+    "category": "incident-response",
+    "summary": "Operational guidance for running a high-tempo incident response war room.",
+    "content": "This playbook defines roles, communication cadences, and escalation paths for critical incidents.\n\nIt also includes a decision matrix for containment vs. business continuity.",
+    "tags": "incident response,crisis,playbook",
+    "source_url": "",
+    "published_at": "2026-03-06T16:15:00"
+  },
+  {
+    "title": "Application Security Coverage Map",
+    "slug": "application-security-coverage-map",
+    "category": "appsec",
+    "summary": "A coverage model that aligns SDLC stages with security tooling and assurance depth.",
+    "content": "The map ties threat modeling, SAST, DAST, and runtime protection into a single coverage matrix.\n\nIt also benchmarks maturity expectations for product teams at scale.",
+    "tags": "appsec,sdlc,coverage",
+    "source_url": "",
+    "published_at": "2026-03-07T10:25:00"
+  },
+  {
+    "title": "Data Protection Control Stack",
+    "slug": "data-protection-control-stack",
+    "category": "data-protection",
+    "summary": "Layered controls for protecting sensitive data across endpoints, cloud, and SaaS.",
+    "content": "The stack combines classification, DLP, encryption, and access governance to reduce data exposure.\n\nIt highlights quick wins such as tokenization and privileged access reviews.",
+    "tags": "data,dlp,encryption",
+    "source_url": "",
+    "published_at": "2026-03-08T13:05:00"
+  },
+  {
+    "title": "Threat Intel: Supply Chain Compromise Patterns",
+    "slug": "threat-intel-supply-chain-compromise-patterns",
+    "category": "threat-intel",
+    "summary": "Patterns in modern supply chain compromises, including build pipeline and dependency hijack.",
+    "content": "Attackers continue to exploit CI/CD credentials, open-source package ownership, and vendor VPN access.\n\nRecommended mitigations include artifact signing, dependency provenance checks, and vendor risk monitoring.",
+    "tags": "supply chain,ci/cd,provenance",
+    "source_url": "",
+    "published_at": "2026-03-09T18:40:00"
+  },
+  {
+    "title": "Board Reporting Metrics That Land",
+    "slug": "board-reporting-metrics-that-land",
+    "category": "governance",
+    "summary": "How to translate security telemetry into board-ready performance and risk metrics.",
+    "content": "Focus on exposure trends, resilience indicators, and risk reduction velocity rather than raw alert counts.\n\nThis guide includes a scorecard template and a quarterly narrative cadence.",
+    "tags": "board,metrics,reporting",
+    "source_url": "",
+    "published_at": "2026-03-10T09:55:00"
+  },
+  {
+    "title": "Cloud Breach Simulation Scenarios",
+    "slug": "cloud-breach-simulation-scenarios",
+    "category": "incident-response",
+    "summary": "Scenario-driven tabletop exercises focused on cloud-native attack paths.",
+    "content": "Simulations cover compromised service principals, misconfigured storage, and poisoned images.\n\nEach scenario includes injects, expected decisions, and post-exercise metrics.",
+    "tags": "tabletop,cloud,ir",
+    "source_url": "",
+    "published_at": "2026-03-11T12:20:00"
+  },
+  {
+    "title": "SOC Modernization Roadmap",
+    "slug": "soc-modernization-roadmap",
+    "category": "governance",
+    "summary": "A phased roadmap for evolving a legacy SOC into a detection engineering practice.",
+    "content": "The roadmap introduces structured use-case development, automation, and threat-led detection metrics.\n\nIt also recommends operating model changes such as fusion centers and dedicated threat hunters.",
+    "tags": "soc,operations,automation",
+    "source_url": "",
+    "published_at": "2026-03-12T08:00:00"
+  },
+  {
+    "title": "Zero Trust Identity Assurance",
+    "slug": "zero-trust-identity-assurance",
+    "category": "zero-trust",
+    "summary": "Identity assurance practices to strengthen continuous verification and reduce credential abuse.",
+    "content": "Key practices include phishing-resistant MFA, conditional access, and continuous session evaluation.\n\nThe guide also details identity risk scoring and adaptive access policies.",
+    "tags": "identity,mfa,zero trust",
+    "source_url": "",
+    "published_at": "2026-03-12T09:30:00"
+  },
+  {
+    "title": "Regulatory Outlook: APAC Data Laws",
+    "slug": "regulatory-outlook-apac-data-laws",
+    "category": "compliance",
+    "summary": "Snapshot of evolving data protection regulations in APAC and upcoming enforcement timelines.",
+    "content": "Covers the most impactful legislative changes across key APAC markets.\n\nIncludes a readiness checklist for cross-border data transfer and consent management.",
+    "tags": "regulation,apac,privacy",
+    "source_url": "",
+    "published_at": "2026-03-12T11:10:00"
+  },
+  {
+    "title": "AppSec KPI Framework",
+    "slug": "appsec-kpi-framework",
+    "category": "appsec",
+    "summary": "KPIs that map application security program health to release velocity and risk reduction.",
+    "content": "The framework covers mean time to remediate, coverage per pipeline stage, and critical exposure backlog.\n\nIt includes dashboard templates tailored for engineering leadership.",
+    "tags": "kpi,appsec,metrics",
+    "source_url": "",
+    "published_at": "2026-03-12T13:40:00"
+  },
+  {
+    "title": "Data Loss Prevention Strategy",
+    "slug": "data-loss-prevention-strategy",
+    "category": "data-protection",
+    "summary": "Strategic guidance for deploying DLP across endpoints, cloud storage, and SaaS.",
+    "content": "This strategy aligns DLP policies with critical data types and business workflows.\n\nIt emphasizes governance, exception management, and measurable outcomes.",
+    "tags": "dlp,data,policy",
+    "source_url": "",
+    "published_at": "2026-03-12T15:05:00"
+  },
+  {
+    "title": "Threat Intel: Credential Access Marketplaces",
+    "slug": "threat-intel-credential-access-marketplaces",
+    "category": "threat-intel",
+    "summary": "Intelligence on credential access brokers and market dynamics.",
+    "content": "Credential access marketplaces continue to thrive with improved operational security and escrow services.\n\nRecommended actions include credential hygiene campaigns and dark web monitoring.",
+    "tags": "credentials,dark web,threat intel",
+    "source_url": "",
+    "published_at": "2026-03-12T16:30:00"
+  },
+  {
+    "title": "Cloud Security Posture Scorecard",
+    "slug": "cloud-security-posture-scorecard",
+    "category": "cloud-security",
+    "summary": "Scorecard model for measuring cloud security posture across accounts and regions.",
+    "content": "The scorecard focuses on identity hygiene, network exposure, and data protection controls.\n\nIt includes a weighting model and executive reporting format.",
+    "tags": "cspm,scorecard,cloud",
+    "source_url": "",
+    "published_at": "2026-03-12T17:45:00"
+  },
+  {
+    "title": "Incident Response Communications Matrix",
+    "slug": "incident-response-communications-matrix",
+    "category": "incident-response",
+    "summary": "A matrix defining who to inform, when, and how during high-severity incidents.",
+    "content": "Includes internal stakeholders, regulators, customers, and vendors with suggested message templates.\n\nSupports rapid alignment during time-sensitive events.",
+    "tags": "communications,ir,stakeholders",
+    "source_url": "",
+    "published_at": "2026-03-12T18:15:00"
+  },
+  {
+    "title": "Compliance Mapping: SOC 2 to ISO 27001",
+    "slug": "compliance-mapping-soc2-iso27001",
+    "category": "compliance",
+    "summary": "Crosswalk between SOC 2 Trust Services Criteria and ISO 27001 controls.",
+    "content": "This mapping reduces audit duplication by showing overlapping controls, evidence sources, and ownership.\n\nIncludes a coverage matrix for control consolidation.",
+    "tags": "soc2,iso27001,compliance",
+    "source_url": "",
+    "published_at": "2026-03-12T19:30:00"
+  },
+  {
+    "title": "Zero Trust Adoption Roadmap",
+    "slug": "zero-trust-adoption-roadmap",
+    "category": "zero-trust",
+    "summary": "A phased roadmap for adopting zero trust without disrupting business operations.",
+    "content": "The roadmap covers identity hardening, device trust, network micro-segmentation, and policy automation.\n\nEach phase includes measurable milestones and recommended technologies.",
+    "tags": "roadmap,zero trust,architecture",
+    "source_url": "",
+    "published_at": "2026-03-12T20:05:00"
+  },
+  {
+    "title": "Threat Modeling for High-Risk Services",
+    "slug": "threat-modeling-high-risk-services",
+    "category": "appsec",
+    "summary": "A lightweight threat modeling workflow for critical services and APIs.",
+    "content": "The workflow uses STRIDE-inspired analysis with a focus on abuse cases and data flow mapping.\n\nOutput includes prioritized mitigations and verification activities.",
+    "tags": "threat modeling,api,appsec",
+    "source_url": "",
+    "published_at": "2026-03-12T20:45:00"
+  },
+  {
+    "title": "Data Residency Decision Tree",
+    "slug": "data-residency-decision-tree",
+    "category": "data-protection",
+    "summary": "Decision tree for managing data residency obligations across regions.",
+    "content": "Guides teams through classification, transfer mechanisms, and local storage requirements.\n\nIncludes vendor evaluation questions for cross-border processing.",
+    "tags": "data residency,privacy,governance",
+    "source_url": "",
+    "published_at": "2026-03-12T21:10:00"
+  },
+  {
+    "title": "Ransomware Recovery Readiness",
+    "slug": "ransomware-recovery-readiness",
+    "category": "incident-response",
+    "summary": "Operational readiness checklist for ransomware recovery scenarios.",
+    "content": "The checklist covers backup immutability, clean-room restore workflows, and third-party coordination.\n\nIt also defines RTO/RPO targets aligned with business priorities.",
+    "tags": "ransomware,recovery,backup",
+    "source_url": "",
+    "published_at": "2026-03-12T21:30:00"
+  },
+  {
+    "title": "Threat Intel: Nation-State Activity Watch",
+    "slug": "threat-intel-nation-state-activity-watch",
+    "category": "threat-intel",
+    "summary": "Monitoring guidance for nation-state activity trends and geopolitical triggers.",
+    "content": "Highlights actor tradecraft, infrastructure targeting patterns, and intelligence sources to monitor.\n\nIncludes early warning indicators for strategic operations.",
+    "tags": "nation-state,geopolitics,threat intel",
+    "source_url": "",
+    "published_at": "2026-03-12T21:45:00"
+  },
+  {
+    "title": "Cloud Security Identity Drift Analysis",
+    "slug": "cloud-security-identity-drift-analysis",
+    "category": "cloud-security",
+    "summary": "How to detect and correct identity drift across cloud environments.",
+    "content": "Identity drift occurs when access policies deviate from baseline due to ad hoc changes.\n\nThis analysis recommends guardrails, automated policy reviews, and variance reporting.",
+    "tags": "iam,cloud drift,governance",
+    "source_url": "",
+    "published_at": "2026-03-12T22:00:00"
+  }
+]
