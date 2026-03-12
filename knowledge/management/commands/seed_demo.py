@@ -11,10 +11,20 @@ from knowledge.models import KnowledgeItem
 class Command(BaseCommand):
     help = 'Seed demo knowledge items.'
 
+    def add_arguments(self, parser):
+        parser.add_argument(
+            '--force',
+            action='store_true',
+            help='Clear existing data before seeding.',
+        )
+
     def handle(self, *args, **options):
-        if KnowledgeItem.objects.exists():
+        if KnowledgeItem.objects.exists() and not options['force']:
             self.stdout.write(self.style.WARNING('Knowledge items already exist. Skipping.'))
             return
+
+        if options['force']:
+            KnowledgeItem.objects.all().delete()
 
         data_path = Path(__file__).resolve().parents[2] / 'data' / 'demo_items.json'
         if not data_path.exists():

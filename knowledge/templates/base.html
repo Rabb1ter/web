@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,10 @@
             <span class="nav__title">{{ site_name }}</span>
         </div>
         <nav class="nav__links">
-            <a href="{% url 'knowledge:index' %}">Home</a>
-            <a href="{% url 'knowledge:catalog' %}">Knowledge Base</a>
+            <a href="{% url 'knowledge:index' %}">首页</a>
+            <a href="{% url 'knowledge:catalog' %}">知识库</a>
         </nav>
-        <a class="button button--ghost" href="{% url 'knowledge:catalog' %}">Explore</a>
+        <a class="button button--ghost" href="{% url 'knowledge:catalog' %}">进入知识库</a>
     </header>
 
     <main class="main">
@@ -33,10 +33,10 @@
 
     <footer class="footer">
         <div>
-            <strong>{{ site_name }}</strong> · Curated intelligence for modern security leaders.
+            <strong>{{ site_name }}</strong> · 面向现代 CISO 的安全情报汇聚平台。
         </div>
         <div class="footer__meta">
-            Built with Django · Demo dataset
+            Django 驱动 · Demo 数据
         </div>
     </footer>
 </body>

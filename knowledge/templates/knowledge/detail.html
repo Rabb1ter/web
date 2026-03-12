@@ -5,7 +5,7 @@
 {% block content %}
 <section class="section section--tight">
     <div class="breadcrumb">
-        <a href="{% url 'knowledge:catalog' %}">Knowledge Base</a>
+        <a href="{% url 'knowledge:catalog' %}">知识库</a>
         <span>→</span>
         <span>{{ category_label }}</span>
     </div>
@@ -13,7 +13,7 @@
     <div class="detail">
         <div class="detail__meta">
             <span class="badge">{{ category_label }}</span>
-            <span>{{ item.published_at|date:"M d, Y" }}</span>
+            <span>{{ item.published_at|date:"Y-m-d" }}</span>
         </div>
         <h1>{{ item.title }}</h1>
         <p class="lead">{{ item.summary }}</p>
@@ -27,7 +27,7 @@
         </div>
         {% if item.source_url %}
         <div class="source">
-            Source: <a href="{{ item.source_url }}" target="_blank" rel="noopener">{{ item.source_url }}</a>
+            来源：<a href="{{ item.source_url }}" target="_blank" rel="noopener">{{ item.source_url }}</a>
         </div>
         {% endif %}
     </div>
@@ -35,18 +35,18 @@
 
 <section class="section">
     <div class="section__header">
-        <h2>Related Briefings</h2>
-        <p>More intelligence in the same domain.</p>
+        <h2>相关简报</h2>
+        <p>同一领域的更多洞察。</p>
     </div>
     <div class="grid grid--cards">
         {% for related in related_items %}
         <article class="card">
             <h3>{{ related.title }}</h3>
             <p>{{ related.summary }}</p>
-            <a class="text-link" href="{% url 'knowledge:detail' slug=related.slug %}">Read →</a>
+            <a class="text-link" href="{% url 'knowledge:detail' slug=related.slug %}">阅读 →</a>
         </article>
         {% empty %}
-        <p>No related items yet.</p>
+        <p>暂无相关条目。</p>
         {% endfor %}
     </div>
 </section>

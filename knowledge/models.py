@@ -4,14 +4,14 @@ from django.utils import timezone
 
 class KnowledgeItem(models.Model):
     CATEGORY_CHOICES = [
-        ('threat-intel', 'Threat Intelligence'),
-        ('governance', 'Security Governance'),
-        ('compliance', 'Compliance & Standards'),
-        ('incident-response', 'Incident Response'),
-        ('cloud-security', 'Cloud Security'),
-        ('zero-trust', 'Zero Trust'),
-        ('appsec', 'Application Security'),
-        ('data-protection', 'Data Protection'),
+        ('threat-intel', '威胁情报'),
+        ('governance', '安全治理'),
+        ('compliance', '合规与标准'),
+        ('incident-response', '应急响应'),
+        ('cloud-security', '云安全'),
+        ('zero-trust', '零信任'),
+        ('appsec', '应用安全'),
+        ('data-protection', '数据保护'),
     ]
 
     title = models.CharField(max_length=200)

@@ -1,52 +1,52 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ site_name }} · CISO Knowledge{% endblock %}
+{% block title %}{{ site_name }} · CISO 知识库{% endblock %}
 
 {% block content %}
 <section class="hero">
     <div class="hero__content">
-        <p class="eyebrow">CISO Intelligence Hub</p>
-        <h1>Stay ahead of threats, compliance shifts, and security strategy.</h1>
+        <p class="eyebrow">CISO 情报中心</p>
+        <h1>洞察威胁、合规与安全战略的关键变化。</h1>
         <p class="lead">
-            {{ site_name }} aggregates critical security knowledge into a single, structured view for modern CISO teams.
+            {{ site_name }} 聚合关键安全知识与情报，为 CISO 团队提供一体化的战略视图。
         </p>
         <div class="hero__actions">
-            <a class="button" href="{% url 'knowledge:catalog' %}">Browse Knowledge</a>
-            <a class="button button--ghost" href="{% url 'knowledge:catalog' %}?category=threat-intel">Threat Intel</a>
+            <a class="button" href="{% url 'knowledge:catalog' %}">浏览知识库</a>
+            <a class="button button--ghost" href="{% url 'knowledge:catalog' %}?category=threat-intel">威胁情报</a>
         </div>
     </div>
     <div class="hero__card">
         <div class="card__header">
-            <span>Live Coverage</span>
+            <span>覆盖范围</span>
             <strong>{{ total_items }}+</strong>
         </div>
         <div class="metric">
             <div>
-                <p class="metric__label">Coverage Domains</p>
+                <p class="metric__label">核心领域</p>
                 <p class="metric__value">8</p>
             </div>
             <div>
-                <p class="metric__label">Update Cycle</p>
-                <p class="metric__value">Weekly</p>
+                <p class="metric__label">更新周期</p>
+                <p class="metric__value">每周</p>
             </div>
         </div>
         <p class="card__note">
-            Demo dataset — ready for real-time feeds, threat intel pipelines, and compliance trackers.
+            当前为 Demo 数据，已准备好接入实时情报、合规追踪与安全指标。
         </p>
     </div>
 </section>
 
 <section class="section">
     <div class="section__header">
-        <h2>Coverage Pillars</h2>
-        <p>Key domains every CISO must monitor.</p>
+        <h2>核心领域</h2>
+        <p>CISO 需要持续关注的关键板块。</p>
     </div>
     <div class="grid grid--cards">
         {% for category in categories %}
         <a class="card" href="{% url 'knowledge:catalog' %}?category={{ category.value }}">
             <h3>{{ category.label }}</h3>
-            <p>{{ category.total }} insights curated</p>
-            <span class="card__cta">Explore →</span>
+            <p>已聚合 {{ category.total }} 条洞察</p>
+            <span class="card__cta">查看 →</span>
         </a>
         {% endfor %}
     </div>
@@ -54,19 +54,19 @@
 
 <section class="section">
     <div class="section__header">
-        <h2>Latest Briefings</h2>
-        <p>Most recent items from the knowledge graph.</p>
+        <h2>最新简报</h2>
+        <p>来自知识图谱的最新条目。</p>
     </div>
     <div class="grid grid--list">
         {% for item in latest_items %}
         <article class="list-card">
             <div class="list-card__meta">
                 <span class="badge">{{ item.get_category_display }}</span>
-                <span>{{ item.published_at|date:"M d, Y" }}</span>
+                <span>{{ item.published_at|date:"Y-m-d" }}</span>
             </div>
             <h3><a href="{% url 'knowledge:detail' slug=item.slug %}">{{ item.title }}</a></h3>
             <p>{{ item.summary }}</p>
-            <a class="text-link" href="{% url 'knowledge:detail' slug=item.slug %}">Read briefing →</a>
+            <a class="text-link" href="{% url 'knowledge:detail' slug=item.slug %}">阅读 →</a>
         </article>
         {% endfor %}
     </div>

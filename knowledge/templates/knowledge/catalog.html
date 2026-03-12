@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 
-{% block title %}Knowledge Base · {{ site_name }}{% endblock %}
+{% block title %}知识库 · {{ site_name }}{% endblock %}
 
 {% block content %}
 <section class="section section--tight">
     <div class="section__header">
-        <h2>Knowledge Base</h2>
-        <p>Search and filter curated intelligence for strategic security leadership.</p>
+        <h2>知识库</h2>
+        <p>检索与筛选 CISO 视角下的关键安全情报与治理知识。</p>
     </div>
 
     <form class="search" method="get" action="">
-        <input type="text" name="q" placeholder="Search threats, frameworks, controls..." value="{{ query }}">
+        <input type="text" name="q" placeholder="搜索威胁、框架、控制项..." value="{{ query }}">
         {% if active_category and active_category != 'all' %}
             <input type="hidden" name="category" value="{{ active_category }}">
         {% endif %}
-        <button class="button" type="submit">Search</button>
+        <button class="button" type="submit">搜索</button>
     </form>
 
     <div class="chip-group">
-        <a class="chip {% if active_category == 'all' or not active_category %}chip--active{% endif %}" href="{% url 'knowledge:catalog' %}?q={{ query }}">All</a>
+        <a class="chip {% if active_category == 'all' or not active_category %}chip--active{% endif %}" href="{% url 'knowledge:catalog' %}?q={{ query }}">全部</a>
         {% for category in categories %}
         <a class="chip {% if active_category == category.value %}chip--active{% endif %}" href="{% url 'knowledge:catalog' %}?category={{ category.value }}&q={{ query }}">
             {{ category.label }} · {{ category.total }}
@@ -33,7 +33,7 @@
         <article class="list-card">
             <div class="list-card__meta">
                 <span class="badge">{{ item.get_category_display }}</span>
-                <span>{{ item.published_at|date:"M d, Y" }}</span>
+                <span>{{ item.published_at|date:"Y-m-d" }}</span>
             </div>
             <h3><a href="{% url 'knowledge:detail' slug=item.slug %}">{{ item.title }}</a></h3>
             <p>{{ item.summary }}</p>
@@ -42,12 +42,12 @@
                 <span class="tag">{{ tag }}</span>
                 {% endfor %}
             </div>
-            <a class="text-link" href="{% url 'knowledge:detail' slug=item.slug %}">Read briefing →</a>
+            <a class="text-link" href="{% url 'knowledge:detail' slug=item.slug %}">阅读 →</a>
         </article>
         {% empty %}
         <div class="empty-state">
-            <h3>No results found</h3>
-            <p>Try a different keyword or remove filters.</p>
+            <h3>没有匹配结果</h3>
+            <p>请尝试其他关键词或取消筛选。</p>
         </div>
         {% endfor %}
     </div>
